@@ -1,0 +1,25 @@
+@import '../../resetStyles.scss';
+
+.thisday__info__now__wrapper{
+    font-family: 'Helvetica';
+    height: 200px;
+    width: 100%;
+    background-color: #343A40;
+    align-items: center;
+    .thisday__info__now__info{
+        padding-top: 4%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .thisday__info__now__row{
+        align-items: center;
+        color: #d7d8d9;
+    }
+    .this__info__row__number{
+        margin-top: 10%;
+        font-size: 1.2rem;
+        color: #fff;
+    } 
+}

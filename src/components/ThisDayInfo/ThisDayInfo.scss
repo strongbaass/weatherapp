@@ -1,0 +1,30 @@
+@import '../../resetStyles.scss';
+
+.thisday__info{
+    font-family: 'Helvetica';
+    padding-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    .thisday__info__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+        background-color: #DCDCDC;
+        border-radius: 5px;
+    }
+    .thisday__info__time{
+        margin-top:5px ;
+    }
+    .thisday__info__description{
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+}
+@media(max-width: 768px){
+    .thisday__info{
+        margin-left: 5%;
+    }
+}

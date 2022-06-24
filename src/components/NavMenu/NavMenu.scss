@@ -1,0 +1,71 @@
+@import '../../resetStyles.scss';
+
+.header__content{
+    font-family: 'Helvetica';
+    background-color: #343A40;
+    width: 100%;
+    height: auto;
+    &__navigation{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+    }
+    &__logo{
+        cursor: pointer;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    &__form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &__search{
+        width: 33%;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+        align-items: center;
+        display: flex;
+    }
+    &__input{
+        height: 80%;
+        width: 70%;
+    }
+    &__button{
+        cursor: pointer;
+        background-color: #EB6F4C;
+        border: none;
+        width: 15%;
+        align-items: center;
+    }
+    &__selectbox{
+        width: 10%;
+        height: 30px;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        justify-content: center;
+        display: flex;
+        background-color: #fff;
+    }
+    &__selectbox span{
+        cursor: pointer;
+        margin: 2px;
+    }
+}
+@media (max-width: 768px) {
+    .header__content{
+
+        &__logo{
+            width: 20%;
+        }
+        &__search{
+            width: 50%;
+        }
+        &__button{
+            width: 30%;
+        }
+    }
+}

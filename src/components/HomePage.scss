@@ -1,0 +1,12 @@
+@import '../resetStyles.scss';
+.info_about_day{
+    display: flex;
+}
+
+@media (max-width: 968px) {
+    .info_about_day{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
