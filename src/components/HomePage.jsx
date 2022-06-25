@@ -6,6 +6,7 @@ import ThisDayNowInfo from "./ThisDayNowInfo/ThisDayNowInfo";
 import axios from 'axios'
 import ThisDayInfo from "./ThisDayInfo/ThisDayInfo.jsx";
 import './HomePage.scss'
+import Welcome from "./Welcome/Welcome";
 
 
 const HomePage = () => {
@@ -28,7 +29,7 @@ const HomePage = () => {
     return(
         <>
             <NavMenu searchLocation={searchLocation} location={location} setLocation={setLocation}/>
-           {data.city !== undefined ? <ThisDay data={data}/> : null} 
+           {data.city !== undefined ? <ThisDay data={data}/> : <Welcome/>} 
                 {data.city !== undefined  ? <div className="info_about_day">
                     {data.list?.map((item,index)=> {
                         return <ThisDayInfo selector={item} key={item.id}/>

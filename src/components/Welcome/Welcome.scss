@@ -1,0 +1,21 @@
+@import '../../resetStyles.scss';
+
+.welcome__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica';
+    &__wrapper{
+        text-align: center;
+        &__title{
+            font-size: 4rem;
+            font-weight: 600;
+            margin-top: 5%;
+        }
+        &__description{
+            font-weight: 600;
+            margin-top: 5%;
+            font-size: 3rem;
+        }
+    }
+}

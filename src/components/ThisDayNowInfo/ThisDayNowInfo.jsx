@@ -7,7 +7,7 @@ const ThisDayNowInfo = ({data}) => {
         <div className="thisday__info__now__info">
             <ul className="thisday__info__now__row">    
                 Chance of Rain
-               {data.list[0].pop ? <li className="this__info__row__number">{data.list[0].pop * 100}%</li>: null}
+              {data.list[0].pop ? <li className="this__info__row__number"> {data.list[0].pop * 100} % </li>: <p className="this__info__row__number">0 %</p>}
             </ul>
             <ul className="thisday__info__now__row">
                 Humidity
